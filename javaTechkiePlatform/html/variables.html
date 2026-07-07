@@ -1,0 +1,1317 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Variables | Java Techkie Platform</title>
+
+    <link rel="stylesheet" href="/css/javafundamentals.css">
+
+</head>
+
+<body>
+
+<!-- ================= NAVIGATION BAR ================= -->
+
+<nav>
+
+    <div class="logo">
+
+        <img src="/images/javalogo.jpg" alt="Java Logo">
+
+        <h2>Java Techkie Platform</h2>
+
+    </div>
+
+    <ul>
+
+        <li><a href="index.html">Home</a></li>
+        <li><a href="modules.html">Modules</a></li>
+        <li><a href="practice.html">Practice</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="contact.html">Contact</a></li>
+
+    </ul>
+
+</nav>
+
+<!-- ================= HERO SECTION ================= -->
+
+<header class="hero">
+
+    <div class="hero-content">
+
+        <h1>Variables in Java</h1>
+
+        <p class="tagline">
+
+            Every application stores information.
+            <br>
+            Variables are the foundation of storing and managing that information.
+
+        </p>
+
+        <a href="#objectives" class="start-btn">
+
+            Start Learning
+
+        </a>
+
+    </div>
+
+</header>
+
+<!-- ================= PROGRESS BAR ================= -->
+
+<section class="progress-section">
+
+<h2>Your Learning Progress</h2>
+
+<div class="progress">
+
+<div class="progress-bar">
+
+20% Completed
+
+</div>
+
+</div>
+
+</section>
+
+<!-- ================= LEARNING OBJECTIVES ================= -->
+
+<section id="objectives" class="card">
+
+<h2>🎯 Learning Objectives</h2>
+
+<p>
+
+By the end of this lesson, you will be able to:
+
+</p>
+
+<ul>
+
+<li>✅ Understand what a variable is.</li>
+
+<li>✅ Know why variables are important.</li>
+
+<li>✅ Declare variables in Java.</li>
+
+<li>✅ Initialize variables with values.</li>
+
+<li>✅ Print variables using Java.</li>
+
+<li>✅ Apply variables in real-world applications.</li>
+
+</ul>
+
+</section>
+
+<!-- ================= STORY SECTION ================= -->
+
+<section class="card">
+
+<h2>📖 Let's Start with a Story</h2>
+
+<p>
+
+Imagine your college asks you to fill out an admission form.
+
+</p>
+
+<p>
+
+The form asks for:
+
+</p>
+
+<ul>
+
+<li>👤 Name</li>
+
+<li>🎂 Age</li>
+
+<li>🎓 Department</li>
+
+<li>🆔 Register Number</li>
+
+<li>📱 Mobile Number</li>
+
+</ul>
+
+<p>
+
+If you simply wrote the values without labels, it would be confusing.
+
+</p>
+
+<div class="example-box">
+
+Rahul <br>
+
+21 <br>
+
+MCA <br>
+
+24MCA101 <br>
+
+0000000000
+
+</div>
+
+<p>
+
+Instead, every value is given a meaningful label.
+
+</p>
+
+<div class="example-box">
+
+Name = Rahul <br>
+
+Age = 21 <br>
+
+Department = MCA <br>
+
+Register Number = 24MCA101 <br>
+
+Mobile Number = 0000000000
+
+</div>
+
+<p>
+
+Java follows exactly the same idea.
+
+The labels used to store information are called <strong>Variables</strong>.
+
+</p>
+
+</section>
+
+<!-- ================= WHAT IS VARIABLE ================= -->
+
+<section class="card">
+
+<h2>📘 What is a Variable?</h2>
+
+<p>
+
+A variable is a named memory location used to store data.
+
+</p>
+
+<p>
+
+The value stored inside a variable can change during program execution.
+
+</p>
+
+<div class="definition">
+
+<h3>Simple Definition</h3>
+
+<p>
+
+A variable is like a labeled container that stores information for later use.
+
+</p>
+
+</div>
+
+</section>
+
+<!-- ================= REAL WORLD EXAMPLE 1 ================= -->
+
+<section class="card">
+
+<h2>🌍 Real-Time Example 1 — Water Bottles</h2>
+
+<p>
+
+Imagine three bottles placed on a table.
+
+</p>
+
+<div class="memory">
+
+<div class="box">
+
+<h3>Water Bottle</h3>
+
+<p>💧 Water</p>
+
+</div>
+
+<div class="box">
+
+<h3>Juice Bottle</h3>
+
+<p>🧃 Juice</p>
+
+</div>
+
+<div class="box">
+
+<h3>Milk Bottle</h3>
+
+<p>🥛 Milk</p>
+
+</div>
+
+</div>
+
+<p>
+
+Each bottle has a label.
+
+Without labels, we wouldn't know what each bottle contains.
+
+</p>
+
+<p>
+
+Similarly, Java variables use meaningful names to store information.
+
+</p>
+
+<div class="code-box">
+
+String name;
+
+<br>
+
+int age;
+
+<br>
+
+double salary;
+
+</div>
+
+</section>
+
+<!-- ================= REAL WORLD EXAMPLE 2 ================= -->
+
+<section class="card">
+
+<h2>🎓 Real-Time Example 2 — Student Management System</h2>
+
+<p>
+
+Suppose your college wants software to store every student's details.
+
+</p>
+
+<p>
+
+The system needs to remember:
+
+</p>
+
+<ul>
+
+<li>Student Name</li>
+
+<li>Age</li>
+
+<li>Department</li>
+
+<li>CGPA</li>
+
+</ul>
+
+<div class="code-box">
+
+String studentName = "Ananya";
+
+<br><br>
+
+int age = 21;
+
+<br><br>
+
+String department = "MCA";
+
+<br><br>
+
+double cgpa = 8.9;
+
+</div>
+
+<p>
+
+Each variable stores one piece of information, making it easy to retrieve and use later.
+
+</p>
+
+</section>
+
+<!-- ================= REAL WORLD EXAMPLE 3 ================= -->
+
+<section class="card">
+
+<h2>🏦 Real-Time Example 3 — ATM System</h2>
+
+<p>
+
+When you insert your ATM card, the ATM temporarily stores your account information.
+
+</p>
+
+<div class="memory">
+
+<div class="box">
+
+<h3>Account Number</h3>
+
+<p>1234567890</p>
+
+</div>
+
+<div class="box">
+
+<h3>PIN</h3>
+
+<p>1234</p>
+
+</div>
+
+<div class="box">
+
+<h3>Balance</h3>
+
+<p>₹25,000</p>
+
+</div>
+
+</div>
+
+<p>
+
+Java Variables
+
+</p>
+
+<div class="code-box">
+
+long accountNumber = 1234567890L;
+
+<br><br>
+
+int pin = 1234;
+
+<br><br>
+
+double balance = 25000.50;
+
+</div>
+
+<p>
+
+Without variables, an ATM could not remember your account details during a transaction.
+
+</p>
+
+</section>
+
+<!-- ================= REAL WORLD EXAMPLE 4 ================= -->
+
+<section class="card">
+
+<h2>🛒 Real-Time Example 4 — Online Shopping</h2>
+
+<p>
+
+Suppose you're shopping online.
+
+</p>
+
+<p>
+
+The website stores:
+
+</p>
+
+<ul>
+
+<li>Product Name</li>
+
+<li>Price</li>
+
+<li>Quantity</li>
+
+<li>Total Amount</li>
+
+</ul>
+
+<div class="code-box">
+
+String product = "Laptop";
+
+<br><br>
+
+double price = 65000;
+
+<br><br>
+
+int quantity = 2;
+
+<br><br>
+
+double total = price * quantity;
+
+</div>
+
+<p>
+
+Whenever the quantity changes, the total amount is recalculated automatically using variables.
+
+</p>
+
+</section>
+
+<!-- ================= WHY VARIABLES ================= -->
+
+<section class="card">
+
+<h2>💡 Why Do We Need Variables?</h2>
+
+<p>
+
+Imagine developing software without variables.
+
+Every value would have to be written repeatedly, making programs difficult to read and maintain.
+
+</p>
+
+<h3>Benefits of Variables</h3>
+
+<ul>
+
+<li>✔ Store information efficiently</li>
+
+<li>✔ Reuse values anywhere in the program</li>
+
+<li>✔ Improve code readability</li>
+
+<li>✔ Simplify program maintenance</li>
+
+<li>✔ Support calculations and decision making</li>
+
+<li>✔ Essential for all real-world applications</li>
+
+</ul>
+
+</section>
+
+<!-- Next section starts here -->
+<!-- Syntax, Declaration, Initialization will be added in Part 2 -->
+ <!-- ========================================= -->
+<!-- VARIABLE SYNTAX -->
+<!-- ========================================= -->
+
+<section class="card">
+
+<h2>💻 Variable Syntax</h2>
+
+<p>
+Every variable in Java follows a simple structure.
+</p>
+
+<div class="code-box">
+
+dataType variableName = value;
+
+</div>
+
+<h3>Example</h3>
+
+<div class="code-box">
+
+int age = 20;
+
+</div>
+
+<h3>Explanation</h3>
+
+<table>
+
+<tr>
+<th>Part</th>
+<th>Meaning</th>
+</tr>
+
+<tr>
+<td><b>int</b></td>
+<td>Data Type</td>
+</tr>
+
+<tr>
+<td><b>age</b></td>
+<td>Variable Name</td>
+</tr>
+
+<tr>
+<td><b>=</b></td>
+<td>Assignment Operator</td>
+</tr>
+
+<tr>
+<td><b>20</b></td>
+<td>Value Stored</td>
+</tr>
+
+</table>
+
+<div class="tip">
+
+💡 Think of it as writing a label on a storage box.
+
+</div>
+
+</section>
+
+<!-- ========================================= -->
+<!-- DECLARATION -->
+<!-- ========================================= -->
+
+<section class="card">
+
+<h2>📝 Variable Declaration</h2>
+
+<p>
+
+Declaration means creating a variable.
+
+At this stage, Java only reserves memory.
+
+No value is stored yet.
+
+</p>
+
+<div class="code-box">
+
+int marks;
+
+</div>
+
+<p>
+
+Here,
+
+<b>marks</b> exists,
+
+but it doesn't contain any value.
+
+</p>
+
+</section>
+
+<!-- ========================================= -->
+<!-- INITIALIZATION -->
+<!-- ========================================= -->
+
+<section class="card">
+
+<h2>🎯 Variable Initialization</h2>
+
+<p>
+
+Initialization means assigning a value to a variable.
+
+</p>
+
+<div class="code-box">
+
+marks = 95;
+
+</div>
+
+<p>
+
+Now the variable stores the value <b>95</b>.
+
+</p>
+
+</section>
+
+<!-- ========================================= -->
+<!-- DECLARATION + INITIALIZATION -->
+<!-- ========================================= -->
+
+<section class="card">
+
+<h2>🚀 Declaration and Initialization Together</h2>
+
+<p>
+
+Most Java programmers create and assign a value in one statement.
+
+</p>
+
+<div class="code-box">
+
+int marks = 95;
+
+</div>
+
+<p>
+
+This is the most commonly used method.
+
+</p>
+
+</section>
+
+<!-- ========================================= -->
+<!-- EXAMPLE PROGRAM 1 -->
+<!-- ========================================= -->
+
+<section class="card">
+
+<h2>💻 Example Program 1</h2>
+
+<h3>Student Information</h3>
+
+<div class="code-box">
+
+<pre>
+
+public class Student{
+
+public static void main(String args[]){
+
+String name = "Rahul";
+
+int age = 20;
+
+double cgpa = 8.9;
+
+System.out.println(name);
+
+System.out.println(age);
+
+System.out.println(cgpa);
+
+}
+
+}
+
+</pre>
+
+</div>
+
+</section>
+
+<!-- ========================================= -->
+<!-- OUTPUT -->
+<!-- ========================================= -->
+
+<section class="card">
+
+<h2>🖥 Output</h2>
+
+<div class="output-box">
+
+Rahul
+
+<br><br>
+
+20
+
+<br><br>
+
+8.9
+
+</div>
+
+</section>
+
+<!-- ========================================= -->
+<!-- LINE BY LINE -->
+<!-- ========================================= -->
+
+<section class="card">
+
+<h2>🔍 Line-by-Line Explanation</h2>
+
+<div class="explanation">
+
+<h3>
+
+String name = "Rahul";
+
+</h3>
+
+<p>
+
+Creates a variable called <b>name</b> and stores Rahul.
+
+</p>
+
+</div>
+
+<div class="explanation">
+
+<h3>
+
+int age = 20;
+
+</h3>
+
+<p>
+
+Creates an integer variable named age.
+
+</p>
+
+</div>
+
+<div class="explanation">
+
+<h3>
+
+double cgpa = 8.9;
+
+</h3>
+
+<p>
+
+Stores the student's CGPA.
+
+</p>
+
+</div>
+
+<div class="explanation">
+
+<h3>
+
+System.out.println(name);
+
+</h3>
+
+<p>
+
+Displays the student's name.
+
+</p>
+
+</div>
+
+<div class="explanation">
+
+<h3>
+
+System.out.println(age);
+
+</h3>
+
+<p>
+
+Displays the student's age.
+
+</p>
+
+</div>
+
+<div class="explanation">
+
+<h3>
+
+System.out.println(cgpa);
+
+</h3>
+
+<p>
+
+Displays the student's CGPA.
+
+</p>
+
+</div>
+
+</section>
+
+<!-- ========================================= -->
+<!-- EXAMPLE PROGRAM 2 -->
+<!-- ========================================= -->
+
+<section class="card">
+
+<h2>🏦 Example Program 2</h2>
+
+<h3>ATM Balance</h3>
+
+<div class="code-box">
+
+<pre>
+
+public class ATM{
+
+public static void main(String args[]){
+
+String customer="Karthik";
+
+double balance=25000.50;
+
+System.out.println(customer);
+
+System.out.println(balance);
+
+}
+
+}
+
+</pre>
+
+</div>
+
+</section>
+
+<!-- ========================================= -->
+<!-- OUTPUT -->
+<!-- ========================================= -->
+
+<section class="card">
+
+<h2>🖥 Output</h2>
+
+<div class="output-box">
+
+Karthik
+
+<br><br>
+
+25000.5
+
+</div>
+
+</section>
+
+<!-- ========================================= -->
+<!-- MEMORY VISUALIZATION -->
+<!-- ========================================= -->
+
+<section class="card">
+
+<h2>🧠 Memory Visualization</h2>
+
+<p>
+
+When Java runs,
+
+memory is allocated for every variable.
+
+</p>
+
+<div class="memory-container">
+
+<div class="memory-box">
+
+<h3>name</h3>
+
+<p>Rahul</p>
+
+</div>
+
+<div class="memory-box">
+
+<h3>age</h3>
+
+<p>20</p>
+
+</div>
+
+<div class="memory-box">
+
+<h3>cgpa</h3>
+
+<p>8.9</p>
+
+</div>
+
+</div>
+
+<p>
+
+Each variable occupies its own memory location.
+
+Whenever the program needs the value,
+
+Java simply looks inside that variable.
+
+</p>
+
+</section>
+
+<!-- ========================================= -->
+<!-- REAL-TIME MEMORY EXAMPLE -->
+<!-- ========================================= -->
+
+<section class="card">
+
+<h2>🌍 Real-Time Memory Example</h2>
+
+<p>
+
+Imagine a locker room in your college.
+
+Each locker has a number.
+
+</p>
+
+<div class="memory-container">
+
+<div class="memory-box">
+
+<h3>Locker 101</h3>
+
+<p>Books</p>
+
+</div>
+
+<div class="memory-box">
+
+<h3>Locker 102</h3>
+
+<p>Laptop</p>
+
+</div>
+
+<div class="memory-box">
+
+<h3>Locker 103</h3>
+
+<p>Bag</p>
+
+</div>
+
+</div>
+
+<p>
+
+Variables work exactly the same way.
+
+Each variable stores one value inside its own memory location.
+
+</p>
+
+</section>
+<!-- ========================================= -->
+<!-- VARIABLE NAMING RULES -->
+<!-- ========================================= -->
+
+<section class="card">
+
+<h2>📖 Variable Naming Rules</h2>
+
+<table>
+
+<tr>
+<th>Rule</th>
+<th>Example</th>
+</tr>
+
+<tr>
+<td>Must begin with a letter, _ or $</td>
+<td>studentName ✔</td>
+</tr>
+
+<tr>
+<td>Cannot begin with a number</td>
+<td>1student ❌</td>
+</tr>
+
+<tr>
+<td>No spaces allowed</td>
+<td>student name ❌</td>
+</tr>
+
+<tr>
+<td>Cannot use Java keywords</td>
+<td>class ❌</td>
+</tr>
+
+<tr>
+<td>Use meaningful names</td>
+<td>totalMarks ✔</td>
+</tr>
+
+</table>
+
+</section>
+
+<!-- ========================================= -->
+<!-- COMMON MISTAKES -->
+<!-- ========================================= -->
+
+<section class="card">
+
+<h2>❌ Common Mistakes</h2>
+
+<div class="code-box">
+
+int 1age = 20;
+
+</div>
+
+<p>❌ Variable names cannot start with numbers.</p>
+
+<hr>
+
+<div class="code-box">
+
+String name = Rahul;
+
+</div>
+
+<p>❌ Strings must be inside quotation marks.</p>
+
+<hr>
+
+<div class="code-box">
+
+int marks = "90";
+
+</div>
+
+<p>❌ Wrong data type assigned.</p>
+
+</section>
+
+<!-- ========================================= -->
+<!-- BEST PRACTICES -->
+<!-- ========================================= -->
+
+<section class="card">
+
+<h2>💡 Best Practices</h2>
+
+<ul>
+
+<li>✔ Use meaningful variable names.</li>
+
+<li>✔ Follow camelCase naming.</li>
+
+<li>✔ Keep names short but descriptive.</li>
+
+<li>✔ Avoid unnecessary abbreviations.</li>
+
+<li>✔ Use lowercase for variable names.</li>
+
+</ul>
+
+</section>
+
+<!-- ========================================= -->
+<!-- THINK LIKE A PROGRAMMER -->
+<!-- ========================================= -->
+
+<section class="card">
+
+<h2>🧠 Think Like a Programmer</h2>
+
+<p>
+
+Suppose you are developing a Hospital Management System.
+
+Which variables would you create?
+
+</p>
+
+<button onclick="showAnswer()">
+
+Show Possible Answer
+
+</button>
+
+<div id="thinkAnswer"></div>
+
+</section>
+
+<!-- ========================================= -->
+<!-- PRACTICE -->
+<!-- ========================================= -->
+
+<section class="card">
+
+<h2>🎯 Practice Exercise</h2>
+
+<p>Create variables for:</p>
+
+<ul>
+
+<li>Your Name</li>
+
+<li>Your Age</li>
+
+<li>Your College</li>
+
+<li>Your Course</li>
+
+</ul>
+
+<button onclick="practice()">
+
+Show Sample Solution
+
+</button>
+
+<div id="practiceAnswer"></div>
+
+</section>
+
+<!-- ========================================= -->
+<!-- QUIZ -->
+<!-- ========================================= -->
+
+<section class="card">
+
+<h2>❓ Quick Quiz</h2>
+
+<h3>1. What is a Variable?</h3>
+
+<button onclick="quiz('q1',false)">Loop</button>
+
+<button onclick="quiz('q1',true)">Memory Location</button>
+
+<button onclick="quiz('q1',false)">Method</button>
+
+<p id="q1"></p>
+
+<hr>
+
+<h3>2. Which is a valid variable?</h3>
+
+<button onclick="quiz('q2',false)">1age</button>
+
+<button onclick="quiz('q2',true)">studentName</button>
+
+<button onclick="quiz('q2',false)">student name</button>
+
+<p id="q2"></p>
+
+<hr>
+
+<h3>3. Which data type stores decimal values?</h3>
+
+<button onclick="quiz('q3',false)">int</button>
+
+<button onclick="quiz('q3',true)">double</button>
+
+<button onclick="quiz('q3',false)">boolean</button>
+
+<p id="q3"></p>
+
+<hr>
+
+<h3>4. Which symbol assigns a value?</h3>
+
+<button onclick="quiz('q4',false)">==</button>
+
+<button onclick="quiz('q4',true)">=</button>
+
+<button onclick="quiz('q4',false)">!=</button>
+
+<p id="q4"></p>
+
+<hr>
+
+<h3>5. Which naming style is recommended?</h3>
+
+<button onclick="quiz('q5',false)">Student_Name</button>
+
+<button onclick="quiz('q5',true)">studentName</button>
+
+<button onclick="quiz('q5',false)">STUDENTNAME</button>
+
+<p id="q5"></p>
+
+</section>
+
+<!-- ========================================= -->
+<!-- KEY TAKEAWAYS -->
+<!-- ========================================= -->
+
+<section class="card">
+
+<h2>📌 Key Takeaways</h2>
+
+<ul>
+
+<li>✅ Variables store data.</li>
+
+<li>✅ Every variable has a name and a data type.</li>
+
+<li>✅ Variables make programs readable.</li>
+
+<li>✅ Meaningful names improve code quality.</li>
+
+<li>✅ Variables are used in every Java application.</li>
+
+</ul>
+
+</section>
+
+<!-- ========================================= -->
+<!-- LESSON NAVIGATION -->
+<!-- ========================================= -->
+
+<div class="lesson-nav">
+
+<a href="introductiontojava.html">
+INTRODUCTION TO JAVA
+⬅ Previous Lesson
+
+</a>
+
+<a href="datatypes.html">
+
+Next Lesson ➜ Data Types
+
+</a>
+
+</div>
+
+<!-- ========================================= -->
+<!-- FOOTER -->
+<!-- ========================================= -->
+
+<footer>
+
+<h2>Java Techkie Platform</h2>
+
+<p>
+
+Step to Code... Step to Achieve
+
+</p>
+
+<p>
+
+Learn Java through Real-Time Examples & Interactive Lessons
+
+</p>
+
+<p>
+
+© 2026 Java Techkie Platform. All Rights Reserved.
+
+</p>
+
+</footer>
+
+<script src="/javascript/javafundamentals.js"></script>
+<button onclick="completeLesson('Variables')">Mark as Completed</button>
+
+</body>
+
+</html>
+

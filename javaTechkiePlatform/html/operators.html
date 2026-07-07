@@ -1,0 +1,1698 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Java Operators | Java Techkie Platform</title>
+
+    <link rel="stylesheet" href="/css/javafundamentals.css">
+
+</head>
+
+<body>
+
+    <!--==========================
+            Navigation
+    ===========================-->
+
+    <nav>
+
+        <div class="logo">
+            <h2>☕ Java Techkie Platform</h2>
+        </div>
+
+        <ul>
+
+            <li><a href="index.html">Home</a></li>
+
+            <li><a href="modules.html">Modules</a></li>
+
+            <li><a href="practice.html">Practice</a></li>
+
+            <li><a href="about.html">About</a></li>
+
+            <li><a href="contact.html">Contact</a></li>
+
+        </ul>
+
+    </nav>
+
+
+    <!--==========================
+            Hero Section
+    ===========================-->
+
+    <section class="hero">
+
+        <h1>"Java Operators" </h1>
+        <br>
+        <h2>"Make Java Perform Calculations and Decisions"</h2>
+        <br>
+        <p>
+
+            Learn how Java uses operators to perform mathematical calculations,
+            compare values, and make intelligent decisions in real-world applications.
+
+        </p>
+
+    </section>
+
+
+    <!--==========================
+        Progress Bar
+    ===========================-->
+
+    <section class="progress-section">
+
+        <h3>Lesson Progress</h3>
+
+        <progress value="0" max="100"></progress>
+
+        <p>Difficulty :
+            ⭐⭐☆☆☆
+        </p>
+
+        <p>Estimated Duration :
+            40 - 50 Minutes
+        </p>
+
+    </section>
+
+
+    <!--==========================
+        Learning Objectives
+    ===========================-->
+
+    <section class="card reveal">
+
+        <h2>🎯 Learning Objectives</h2>
+
+        <p>
+
+            By the end of this lesson, you will be able to:
+
+        </p>
+
+        <ul>
+
+            <li>✅ Understand what Java Operators are.</li>
+
+            <li>✅ Perform mathematical calculations.</li>
+
+            <li>✅ Compare values using relational operators.</li>
+
+            <li>✅ Use logical operators in decision making.</li>
+
+            <li>✅ Apply assignment operators correctly.</li>
+
+            <li>✅ Write Java programs using different operators.</li>
+
+            <li>✅ Solve real-world problems using operators.</li>
+
+        </ul>
+
+    </section>
+
+
+    <!--==========================
+        What are Operators
+    ===========================-->
+
+    <section class="card reveal">
+
+        <h2>📖 What are Operators?</h2>
+
+        <p>
+
+            Operators are <b>special symbols</b> that tell Java to perform an
+            operation on one or more values.
+
+        </p>
+
+        <p>
+
+            They allow Java to perform calculations, compare values,
+            assign data, and make logical decisions.
+
+        </p>
+
+        <div class="definition">
+
+            <h3>Simple Definition</h3>
+
+            <p>
+
+                <b>
+
+                    Operators are symbols used to perform different operations
+                    on variables and values.
+
+                </b>
+
+            </p>
+
+        </div>
+
+    </section>
+
+
+    <!--==========================
+        Real World Example
+    ===========================-->
+
+    <section class="card reveal">
+
+        <h2>🌍 Real-World Example</h2>
+
+        <h3>Imagine You Visit a Supermarket...</h3>
+
+        <p>
+
+            You purchase:
+
+        </p>
+
+        <ul>
+
+            <li>Milk – ₹60</li>
+
+            <li>Bread – ₹40</li>
+
+            <li>Chocolate – ₹100</li>
+
+        </ul>
+
+        <p>
+
+            The cashier calculates:
+
+        </p>
+
+        <div class="code-box">
+
+            ₹60 + ₹40 + ₹100 = ₹200
+
+        </div>
+
+        <p>
+
+            The <b>+</b> symbol performs addition.
+
+            Java uses the same operator to perform mathematical calculations.
+
+        </p>
+
+    </section>
+
+
+    <!--==========================
+        Another Example
+    ===========================-->
+
+    <section class="card reveal">
+
+        <h2>💼 Another Real-Time Example</h2>
+
+        <p>
+
+            Suppose your college allows only students with
+            <b>75% attendance or above</b>
+            to write the semester examination.
+
+        </p>
+
+        <div class="code-box">
+
+            Attendance >= 75
+
+        </div>
+
+        <p>
+
+            If the student's attendance is greater than or equal to 75,
+            they are eligible for the exam.
+
+        </p>
+
+        <p>
+
+            Here,
+
+            <b>>=</b>
+
+            is a
+
+            <b>Relational Operator.</b>
+
+        </p>
+
+    </section>
+
+
+    <!--==========================
+        Why Learn Operators
+    ===========================-->
+
+    <section class="card reveal">
+
+        <h2>🚀 Why Learn Operators?</h2>
+
+        <p>
+
+            Operators are used in almost every Java application.
+
+        </p>
+
+        <div class="features">
+
+            <div class="feature-card">
+
+                <h3>➕ Calculations</h3>
+
+                <p>
+
+                    Perform addition, subtraction,
+                    multiplication and division.
+
+                </p>
+
+            </div>
+
+            <div class="feature-card">
+
+                <h3>⚖ Comparisons</h3>
+
+                <p>
+
+                    Compare two values and make decisions.
+
+                </p>
+
+            </div>
+
+            <div class="feature-card">
+
+                <h3>🧠 Logic Building</h3>
+
+                <p>
+
+                    Combine multiple conditions using logical operators.
+
+                </p>
+
+            </div>
+
+            <div class="feature-card">
+
+                <h3>💻 Real Applications</h3>
+
+                <p>
+
+                    Used in Banking,
+                    ATM,
+                    Hospital,
+                    Shopping,
+                    Employee Management,
+                    Student Portals and more.
+
+                </p>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!--==========================
+        Next Button
+    ===========================-->
+
+    <div class="navigation-buttons">
+
+        <a href="datatypes.html">
+
+            ⬅ Previous Lesson
+
+        </a>
+
+        <a href="#operatorTypes">
+
+            Next Section ➜
+
+        </a>
+
+    </div>
+    <!--=====================================
+        TYPES OF OPERATORS
+======================================-->
+
+<section class="card reveal" id="operatorTypes">
+
+    <h2>📚 Types of Operators in Java</h2>
+
+    <p>
+        Java provides different types of operators to perform
+        different kinds of operations.
+    </p>
+
+    <table>
+
+        <tr>
+            <th>Operator Type</th>
+            <th>Purpose</th>
+            <th>Example</th>
+        </tr>
+
+        <tr>
+            <td>Arithmetic</td>
+            <td>Perform Mathematical Calculations</td>
+            <td>+, -, *, /, %</td>
+        </tr>
+
+        <tr>
+            <td>Relational</td>
+            <td>Compare Values</td>
+            <td>>, <, >=, <=, ==, !=</td>
+        </tr>
+
+        <tr>
+            <td>Logical</td>
+            <td>Combine Conditions</td>
+            <td>&&, ||, !</td>
+        </tr>
+
+        <tr>
+            <td>Assignment</td>
+            <td>Assign Values</td>
+            <td>=, +=, -=</td>
+        </tr>
+
+        <tr>
+            <td>Unary</td>
+            <td>Increment / Decrement</td>
+            <td>++, --</td>
+        </tr>
+
+        <tr>
+            <td>Ternary</td>
+            <td>Short If-Else</td>
+            <td>? :</td>
+        </tr>
+
+    </table>
+
+</section>
+
+
+<!--=====================================
+        ARITHMETIC OPERATORS
+======================================-->
+
+<section class="card reveal">
+
+<h2>➕ Arithmetic Operators</h2>
+
+<p>
+
+Arithmetic operators are used to perform mathematical calculations.
+
+</p>
+
+<table>
+
+<tr>
+
+<th>Operator</th>
+
+<th>Name</th>
+
+<th>Example</th>
+
+<th>Result</th>
+
+</tr>
+
+<tr>
+
+<td>+</td>
+
+<td>Addition</td>
+
+<td>10 + 5</td>
+
+<td>15</td>
+
+</tr>
+
+<tr>
+
+<td>-</td>
+
+<td>Subtraction</td>
+
+<td>10 - 5</td>
+
+<td>5</td>
+
+</tr>
+
+<tr>
+
+<td>*</td>
+
+<td>Multiplication</td>
+
+<td>10 * 5</td>
+
+<td>50</td>
+
+</tr>
+
+<tr>
+
+<td>/</td>
+
+<td>Division</td>
+
+<td>10 / 5</td>
+
+<td>2</td>
+
+</tr>
+
+<tr>
+
+<td>%</td>
+
+<td>Modulus</td>
+
+<td>10 % 3</td>
+
+<td>1</td>
+
+</tr>
+
+</table>
+
+</section>
+
+
+<!--=====================================
+        SYNTAX
+======================================-->
+
+<section class="card reveal">
+
+<h2>💻 Syntax</h2>
+
+<p>
+
+General syntax of arithmetic operators:
+
+</p>
+
+<pre>
+
+result = operand1 operator operand2;
+
+</pre>
+
+<p>
+
+Example:
+
+</p>
+
+<pre>
+
+sum = a + b;
+
+</pre>
+
+</section>
+
+
+<!--=====================================
+        JAVA PROGRAM
+======================================-->
+
+<section class="card reveal">
+
+<h2>💻 Java Example Program</h2>
+
+<p>
+
+The following program demonstrates all Arithmetic Operators.
+
+</p>
+
+<pre id="code1">
+
+public class ArithmeticOperators {
+
+    public static void main(String[] args) {
+
+        int a = 20;
+        int b = 5;
+
+        System.out.println("Addition : " + (a+b));
+        System.out.println("Subtraction : " + (a-b));
+        System.out.println("Multiplication : " + (a*b));
+        System.out.println("Division : " + (a/b));
+        System.out.println("Modulus : " + (a%b));
+
+    }
+
+}
+
+</pre>
+
+<button onclick="copyCode('code1')">
+
+📋 Copy Code
+
+</button>
+
+</section>
+
+
+<!--=====================================
+        OUTPUT
+======================================-->
+
+<section class="card reveal">
+
+<h2>🖥 Output</h2>
+
+<pre>
+
+Addition : 25
+Subtraction : 15
+Multiplication : 100
+Division : 4
+Modulus : 0
+
+</pre>
+
+</section>
+
+
+<!--=====================================
+        PROGRAM EXPLANATION
+======================================-->
+
+<section class="card reveal">
+
+<h2>📖 Program Explanation</h2>
+
+<ul>
+
+<li>
+<b>int a = 20;</b><br>
+Declares an integer variable named <b>a</b>.
+</li>
+
+<br>
+
+<li>
+<b>int b = 5;</b><br>
+Declares another integer variable.
+</li>
+
+<br>
+
+<li>
+<b>a + b</b><br>
+Adds two numbers.
+</li>
+
+<br>
+
+<li>
+<b>a - b</b><br>
+Subtracts one number from another.
+</li>
+
+<br>
+
+<li>
+<b>a * b</b><br>
+Multiplies two numbers.
+</li>
+
+<br>
+
+<li>
+<b>a / b</b><br>
+Divides two numbers.
+</li>
+
+<br>
+
+<li>
+<b>a % b</b><br>
+Returns the remainder after division.
+</li>
+
+</ul>
+
+</section>
+
+
+<!--=====================================
+        REAL-TIME EXAMPLE
+======================================-->
+
+<section class="card reveal">
+
+<h2>🌍 Real-Time Example</h2>
+
+<p>
+
+Imagine you are developing an <b>Online Shopping System</b>.
+
+</p>
+
+<table>
+
+<tr>
+
+<th>Operation</th>
+
+<th>Operator Used</th>
+
+</tr>
+
+<tr>
+
+<td>Add Product Price</td>
+
+<td>+</td>
+
+</tr>
+
+<tr>
+
+<td>Calculate Discount</td>
+
+<td>-</td>
+
+</tr>
+
+<tr>
+
+<td>Calculate GST</td>
+
+<td>*</td>
+
+</tr>
+
+<tr>
+
+<td>Split Restaurant Bill</td>
+
+<td>/</td>
+
+</tr>
+
+<tr>
+
+<td>Check Remaining Balance</td>
+
+<td>%</td>
+
+</tr>
+
+</table>
+
+<p>
+
+Every billing software, ATM system, banking application,
+and shopping website uses Arithmetic Operators every day.
+
+</p>
+
+</section>
+
+
+<div class="navigation-buttons">
+
+<a href="#operatorTypes">
+
+⬆ Back to Top
+
+</a>
+
+<a href="#relational">
+
+Next ➜ Relational Operators
+
+</a>
+
+</div>
+<!--=====================================
+        RELATIONAL OPERATORS
+======================================-->
+
+<section class="card reveal" id="relational">
+
+<h2>⚖ Relational Operators</h2>
+
+<p>
+
+Relational operators compare two values and always return
+either <b>true</b> or <b>false</b>.
+
+</p>
+
+<table>
+
+<tr>
+<th>Operator</th>
+<th>Meaning</th>
+<th>Example</th>
+</tr>
+
+<tr>
+<td>></td>
+<td>Greater Than</td>
+<td>10 > 5</td>
+</tr>
+
+<tr>
+<td><</td>
+<td>Less Than</td>
+<td>10 < 5</td>
+</tr>
+
+<tr>
+<td>>=</td>
+<td>Greater Than or Equal</td>
+<td>10 >= 10</td>
+</tr>
+
+<tr>
+<td><=</td>
+<td>Less Than or Equal</td>
+<td>5 <= 10</td>
+</tr>
+
+<tr>
+<td>==</td>
+<td>Equal To</td>
+<td>10 == 10</td>
+</tr>
+
+<tr>
+<td>!=</td>
+<td>Not Equal To</td>
+<td>10 != 5</td>
+</tr>
+
+</table>
+
+<h3>Example Program</h3>
+
+<pre id="code2">
+int age = 18;
+
+System.out.println(age >= 18);
+System.out.println(age == 20);
+</pre>
+
+<button onclick="copyCode('code2')">
+
+📋 Copy Code
+
+</button>
+
+<h3>Output</h3>
+
+<pre>
+true
+false
+</pre>
+
+<h3>Real-Time Example</h3>
+
+<p>
+
+Online voting systems check whether a person's age is
+<b>18 or above</b> before allowing them to vote.
+
+</p>
+
+</section>
+
+
+<!--=====================================
+        LOGICAL OPERATORS
+======================================-->
+
+<section class="card reveal">
+
+<h2>🧠 Logical Operators</h2>
+
+<p>
+
+Logical operators combine two or more conditions.
+
+</p>
+
+<table>
+
+<tr>
+<th>Operator</th>
+<th>Meaning</th>
+<th>Example</th>
+</tr>
+
+<tr>
+<td>&&</td>
+<td>Logical AND</td>
+<td>a>10 && b<20</td>
+</tr>
+
+<tr>
+<td>||</td>
+<td>Logical OR</td>
+<td>a>10 || b<20</td>
+</tr>
+
+<tr>
+<td>!</td>
+<td>Logical NOT</td>
+<td>!true</td>
+</tr>
+
+</table>
+
+<h3>Example Program</h3>
+
+<pre id="code3">
+int age = 22;
+
+boolean hasID = true;
+
+System.out.println(age >= 18 && hasID);
+</pre>
+
+<button onclick="copyCode('code3')">
+
+📋 Copy Code
+
+</button>
+
+<h3>Output</h3>
+
+<pre>
+true
+</pre>
+
+<h3>Real-Time Example</h3>
+
+<p>
+
+An ATM allows withdrawal only when:
+
+</p>
+
+<ul>
+
+<li>✔ Correct PIN entered</li>
+
+<li>✔ Enough account balance</li>
+
+</ul>
+
+<p>
+
+Both conditions must be true.
+
+</p>
+
+</section>
+
+
+<!--=====================================
+        ASSIGNMENT OPERATORS
+======================================-->
+
+<section class="card reveal">
+
+<h2>📝 Assignment Operators</h2>
+
+<p>
+
+Assignment operators assign or update values stored inside variables.
+
+</p>
+
+<table>
+
+<tr>
+<th>Operator</th>
+<th>Example</th>
+<th>Equivalent To</th>
+</tr>
+
+<tr>
+<td>=</td>
+<td>x = 10</td>
+<td>Assign Value</td>
+</tr>
+
+<tr>
+<td>+=</td>
+<td>x += 5</td>
+<td>x = x + 5</td>
+</tr>
+
+<tr>
+<td>-=</td>
+<td>x -= 2</td>
+<td>x = x - 2</td>
+</tr>
+
+<tr>
+<td>*=</td>
+<td>x *= 3</td>
+<td>x = x * 3</td>
+</tr>
+
+<tr>
+<td>/=</td>
+<td>x /= 2</td>
+<td>x = x / 2</td>
+</tr>
+
+</table>
+
+<h3>Example Program</h3>
+
+<pre id="code4">
+int marks = 50;
+
+marks += 10;
+
+System.out.println(marks);
+</pre>
+
+<button onclick="copyCode('code4')">
+
+📋 Copy Code
+
+</button>
+
+<h3>Output</h3>
+
+<pre>
+60
+</pre>
+
+<h3>Real-Time Example</h3>
+
+<p>
+
+When reward points are added after shopping, the system updates the total using
+<b>+=</b>.
+
+</p>
+
+</section>
+
+
+<!--=====================================
+        UNARY OPERATORS
+======================================-->
+
+<section class="card reveal">
+
+<h2>🔄 Unary Operators</h2>
+
+<p>
+
+Unary operators work on only one variable.
+
+</p>
+
+<table>
+
+<tr>
+<th>Operator</th>
+<th>Meaning</th>
+</tr>
+
+<tr>
+<td>++</td>
+<td>Increment</td>
+</tr>
+
+<tr>
+<td>--</td>
+<td>Decrement</td>
+</tr>
+
+</table>
+
+<h3>Example Program</h3>
+
+<pre id="code5">
+int count = 10;
+
+count++;
+
+System.out.println(count);
+</pre>
+
+<button onclick="copyCode('code5')">
+
+📋 Copy Code
+
+</button>
+
+<h3>Output</h3>
+
+<pre>
+11
+</pre>
+
+<h3>Real-Time Example</h3>
+
+<p>
+
+Every time a visitor opens a website, the visitor count increases by one.
+
+</p>
+
+</section>
+
+
+<!--=====================================
+        TERNARY OPERATOR
+======================================-->
+
+<section class="card reveal">
+
+<h2>❓ Ternary Operator</h2>
+
+<p>
+
+The Ternary Operator is a short form of the if-else statement.
+
+</p>
+
+<h3>Syntax</h3>
+
+<pre>
+condition ? trueValue : falseValue;
+</pre>
+
+<h3>Example Program</h3>
+
+<pre id="code6">
+int marks = 85;
+
+String result = (marks >= 50) ? "Pass" : "Fail";
+
+System.out.println(result);
+</pre>
+
+<button onclick="copyCode('code6')">
+
+📋 Copy Code
+
+</button>
+
+<h3>Output</h3>
+
+<pre>
+Pass
+</pre>
+
+<h3>Real-Time Example</h3>
+
+<p>
+
+An online examination system instantly displays
+<b>Pass</b> or <b>Fail</b> based on the student's marks.
+
+</p>
+
+</section>
+
+
+<!--=====================================
+        SECTION NAVIGATION
+======================================-->
+
+<div class="navigation-buttons">
+
+<a href="#operatorTypes">
+
+⬅ Previous Section
+
+</a>
+
+<a href="#precedence">
+
+Next ➜ Operator Precedence
+
+</a>
+
+</div>
+<!--=====================================
+        OPERATOR PRECEDENCE
+======================================-->
+
+<section class="card reveal" id="precedence">
+
+<h2>🎯 Operator Precedence</h2>
+
+<p>
+
+Operator precedence determines the order in which Java evaluates an expression.
+
+</p>
+
+<table>
+
+<tr>
+<th>Priority</th>
+<th>Operators</th>
+</tr>
+
+<tr>
+<td>1</td>
+<td>() Parentheses</td>
+</tr>
+
+<tr>
+<td>2</td>
+<td>++, --</td>
+</tr>
+
+<tr>
+<td>3</td>
+<td>*, /, %</td>
+</tr>
+
+<tr>
+<td>4</td>
+<td>+, -</td>
+</tr>
+
+<tr>
+<td>5</td>
+<td>> , < , >= , <=</td>
+</tr>
+
+<tr>
+<td>6</td>
+<td>== , !=</td>
+</tr>
+
+<tr>
+<td>7</td>
+<td>&&</td>
+</tr>
+
+<tr>
+<td>8</td>
+<td>||</td>
+</tr>
+
+<tr>
+<td>9</td>
+<td>=</td>
+</tr>
+
+</table>
+
+<h3>Example</h3>
+
+<pre id="code7">
+int result = 10 + 5 * 2;
+
+System.out.println(result);
+</pre>
+
+<button onclick="copyCode('code7')">
+📋 Copy Code
+</button>
+
+<h3>Output</h3>
+
+<pre>
+20
+</pre>
+
+<p>
+
+Multiplication has higher priority than addition.
+
+</p>
+
+</section>
+
+<!--=====================================
+        INDUSTRY USE CASES
+======================================-->
+
+<section class="card reveal">
+
+<h2>🏢 Industry Use Cases</h2>
+
+<table>
+
+<tr>
+<th>Application</th>
+<th>Operator Used</th>
+</tr>
+
+<tr>
+<td>ATM System</td>
+<td>== , &&</td>
+</tr>
+
+<tr>
+<td>Online Shopping</td>
+<td>+ , - , *</td>
+</tr>
+
+<tr>
+<td>Hospital Management</td>
+<td>>=</td>
+</tr>
+
+<tr>
+<td>Student Result System</td>
+<td>?, >=</td>
+</tr>
+
+<tr>
+<td>Payroll System</td>
+<td>+, -, *</td>
+</tr>
+
+<tr>
+<td>Banking Software</td>
+<td>+, -, &&</td>
+</tr>
+
+</table>
+
+</section>
+
+<!--=====================================
+        COMMON MISTAKES
+======================================-->
+
+<section class="card reveal">
+
+<h2>❌ Common Mistakes</h2>
+
+<ul>
+
+<li>
+Using <b>=</b> instead of <b>==</b> for comparison.
+</li>
+
+<br>
+
+<li>
+Dividing a number by zero.
+</li>
+
+<br>
+
+<li>
+Ignoring operator precedence.
+</li>
+
+<br>
+
+<li>
+Using logical operators with invalid conditions.
+</li>
+
+<br>
+
+<li>
+Forgetting parentheses in complex expressions.
+</li>
+
+</ul>
+
+</section>
+
+<!--=====================================
+        BEST PRACTICES
+======================================-->
+
+<section class="card reveal">
+
+<h2>💡 Best Practices</h2>
+
+<ul>
+
+<li>✔ Use meaningful variable names.</li>
+
+<li>✔ Keep expressions simple.</li>
+
+<li>✔ Use parentheses for better readability.</li>
+
+<li>✔ Test conditions before executing logic.</li>
+
+<li>✔ Avoid unnecessary calculations.</li>
+
+<li>✔ Comment complex expressions.</li>
+
+</ul>
+
+</section>
+
+<!--=====================================
+        THINK LIKE A PROGRAMMER
+======================================-->
+
+<section class="card reveal">
+
+<h2>🧠 Think Like a Programmer</h2>
+
+<p>
+
+Suppose you are developing an Online Shopping Website.
+
+Choose the appropriate operator.
+
+</p>
+
+<table>
+
+<tr>
+
+<th>Situation</th>
+
+<th>Operator</th>
+
+</tr>
+
+<tr>
+
+<td>Add Product Price</td>
+
+<td>______</td>
+
+</tr>
+
+<tr>
+
+<td>Check Age 18 or Above</td>
+
+<td>______</td>
+
+</tr>
+
+<tr>
+
+<td>Verify Username AND Password</td>
+
+<td>______</td>
+
+</tr>
+
+<tr>
+
+<td>Increase Quantity</td>
+
+<td>______</td>
+
+</tr>
+
+<tr>
+
+<td>Pass or Fail</td>
+
+<td>______</td>
+
+</tr>
+
+</table>
+
+<button onclick="showOperatorAnswer()">
+
+Show Answer
+
+</button>
+
+<div id="operatorAnswer"></div>
+
+</section>
+
+<!--=====================================
+        PRACTICE EXERCISE
+======================================-->
+
+<section class="card reveal">
+
+<h2>🎯 Practice Exercise</h2>
+
+<p>
+
+Write a Java program to:
+
+</p>
+
+<ul>
+
+<li>Declare two integer variables.</li>
+
+<li>Perform all arithmetic operations.</li>
+
+<li>Compare both numbers.</li>
+
+<li>Print the results.</li>
+
+<li>Display whether the first number is greater.</li>
+
+</ul>
+
+</section>
+
+<!--=====================================
+        QUICK QUIZ
+======================================-->
+
+<section class="card reveal">
+
+<h2>❓ Quick Quiz</h2>
+
+<form id="quizForm">
+
+<p>1. Which operator performs addition?</p>
+
+<input type="radio" name="q1" value="A"> +<br>
+<input type="radio" name="q1" value="B"> *<br>
+<input type="radio" name="q1" value="C"> %<br>
+
+<hr>
+
+<p>2. Which operator checks equality?</p>
+
+<input type="radio" name="q2" value="A"> ==<br>
+<input type="radio" name="q2" value="B"> =<br>
+<input type="radio" name="q2" value="C"> !=<br>
+
+<hr>
+
+<p>3. Which logical operator means AND?</p>
+
+<input type="radio" name="q3" value="A"> &&<br>
+<input type="radio" name="q3" value="B"> ||<br>
+<input type="radio" name="q3" value="C"> !<br>
+
+<hr>
+
+<p>4. Which operator increases a variable by one?</p>
+
+<input type="radio" name="q4" value="A"> --<br>
+<input type="radio" name="q4" value="B"> ++<br>
+<input type="radio" name="q4" value="C"> +=<br>
+
+<hr>
+
+<p>5. Which operator returns the remainder?</p>
+
+<input type="radio" name="q5" value="A"> /<br>
+<input type="radio" name="q5" value="B"> %<br>
+<input type="radio" name="q5" value="C"> +<br>
+
+<br>
+
+<button type="button" onclick="checkOperatorQuiz()">
+
+Submit Quiz
+
+</button>
+
+</form>
+
+<h3 id="quizResult"></h3>
+
+</section>
+
+<!--=====================================
+        KEY TAKEAWAYS
+======================================-->
+
+<section class="card reveal">
+
+<h2>📌 Key Takeaways</h2>
+
+<ul>
+
+<li>✅ Operators perform operations on variables and values.</li>
+
+<li>✅ Arithmetic operators perform calculations.</li>
+
+<li>✅ Relational operators compare values.</li>
+
+<li>✅ Logical operators combine conditions.</li>
+
+<li>✅ Assignment operators update variables.</li>
+
+<li>✅ Unary operators increment and decrement values.</li>
+
+<li>✅ Ternary operator is a shortcut for if-else.</li>
+
+<li>✅ Operators are used in almost every Java application.</li>
+
+</ul>
+
+</section>
+
+<!--=====================================
+        LESSON COMPLETED
+======================================-->
+
+<section class="card reveal">
+
+<h2>🏆 Lesson Completed</h2>
+
+<p>
+
+Excellent!
+
+You have successfully completed the Operators lesson.
+
+</p>
+
+<button onclick="completeLesson()">
+
+Mark Lesson Complete
+
+</button>
+
+<h3 id="lessonStatus"></h3>
+
+</section>
+
+<!--=====================================
+        STAR RATING
+======================================-->
+
+<section class="card reveal">
+
+<h2>⭐ Rate this Lesson</h2>
+
+<div class="stars">
+
+<span onclick="rateLesson(1)">⭐</span>
+<span onclick="rateLesson(2)">⭐</span>
+<span onclick="rateLesson(3)">⭐</span>
+<span onclick="rateLesson(4)">⭐</span>
+<span onclick="rateLesson(5)">⭐</span>
+
+</div>
+
+<p id="ratingMessage"></p>
+
+</section>
+
+<!--=====================================
+        NOTES
+======================================-->
+
+<section class="card reveal">
+
+<h2>📝 My Notes</h2>
+
+<textarea id="notes" rows="8"
+placeholder="Write your notes here..."></textarea>
+
+<br><br>
+
+<button onclick="saveNotes()">
+
+Save Notes
+
+</button>
+
+</section>
+
+<!--=====================================
+        PAGE NAVIGATION
+======================================-->
+
+<div class="navigation-buttons">
+
+<a href="datatypes.html">
+
+⬅ Previous Lesson
+
+</a>
+
+<a href="userinput.html">
+
+Next Lesson ➜ User Input (Scanner)
+
+</a>
+
+</div>
+
+<!--=====================================
+        FOOTER
+======================================-->
+
+<footer>
+
+<p>
+
+© 2026 Java Techkie Platform
+
+</p>
+
+<p>
+
+Designed & Developed by Suriya Prabha
+
+</p>
+
+</footer>
+
+<script src="script.js"></script>
+
+</body>
+</html>
+
+
+    <script src="/javascript/javafundamentals.js"></script>
+
+</body>
+
+</html>

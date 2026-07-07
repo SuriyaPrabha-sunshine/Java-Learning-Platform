@@ -26,15 +26,18 @@
 <h6>Sunshine Java Techkie</h6>
 <img class="centre-image"src="/images/javalogo.jpg"  />
 <div class="menu" style="background-color:aquamarine">
-        <a href="#">Home</a><br>
-        <a href="#">Modules</a><br>
-        <a href="#">Practice</a><br>
-        <a href="#">Contact</a><br>
+        <a href="index.html">Home</a><br>
+        <a href="modules.html">Modules</a><br>
+        <a href="practice.html">Practice</a><br>
+        <a href="about.html">About</a><br>
+        <a href="contact.html">Contact</a><br>
 </div>
 
 <h3>Step to Code. Step to Achieve.</h3>
 <p>Structured Java learning powered by real-world examples and industry-focused development.</p>
-<button>Start Learning </button>
+<button onclick="goToModules()">
+    Start Learning
+</button>
 
 <h2>Your Structured Path to Java Mastery</h2>
 <p>Java Techkie Platform provides a step-by-step learning roadmap covering:</p>
@@ -84,8 +87,13 @@
 
 <h2>Ready to Build Your Java Career?</h2>
 <p>Start your journey today and move step by step towards becoming a confident Java developer.</p>
-<button>Start Now</button><br>
-<button>View Practice Problems</button>
+<button onclick="window.location.href='modules.html'">
+    Start Now
+</button>
+<br>
+<button onclick="window.location.href='practice.html'">
+    View Practice Problems
+</button>
 
 <p>Turning Concepts into Confidence.<br>
 From Logic to Large-Scale Systems.</p>
@@ -111,4 +119,9 @@ From Logic to Large-Scale Systems.</p>
 
 <script src="https://code.jquery.com/jquery-3.7.1.js" integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4=" crossorigin="anonymous"></script>
 <script src="/html/menu.js"></script>
+<script>
+function goToModules(){
+    window.location.href="modules.html";
+}
+</script>
 </html>

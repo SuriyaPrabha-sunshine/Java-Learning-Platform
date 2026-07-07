@@ -1,0 +1,1668 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Data Types | Java Techkie Platform</title>
+
+    <link rel="stylesheet" href="/css/javafundamentals.css">
+
+</head>
+
+<body>
+
+<!-- ====================================== -->
+<!-- NAVIGATION BAR -->
+<!-- ====================================== -->
+
+<nav>
+
+    <div class="logo">
+
+        <img src="/images/javalogo.jpg" alt="Java Logo">
+
+        <h2>Java Techkie Platform</h2>
+
+    </div>
+
+    <ul>
+
+        <li><a href="index.html">Home</a></li>
+
+        <li><a href="modules.html">Modules</a></li>
+
+        <li><a href="practice.html">Practice</a></li>
+
+        <li><a href="about.html">About</a></li>
+
+        <li><a href="contact.html">Contact</a></li>
+
+    </ul>
+
+</nav>
+
+<!-- ====================================== -->
+<!-- HERO SECTION -->
+<!-- ====================================== -->
+
+<header class="hero">
+
+    <div class="hero-content">
+
+        <h1>Java Data Types</h1>
+
+        <p>
+
+            Every piece of information has a different form.
+            Java uses Data Types to identify, store, and manage information efficiently.
+
+        </p>
+
+        <a href="#objectives" class="start-btn">
+
+            Start Learning
+
+        </a>
+
+    </div>
+
+</header>
+
+<!-- ====================================== -->
+<!-- PROGRESS BAR -->
+<!-- ====================================== -->
+
+<section class="progress-section">
+
+<h2>Your Learning Progress</h2>
+
+<div class="progress">
+
+<div class="progress-bar">
+
+30% Completed
+
+</div>
+
+</div>
+
+</section>
+
+<!-- ====================================== -->
+<!-- LEARNING OBJECTIVES -->
+<!-- ====================================== -->
+
+<section class="card" id="objectives">
+
+<h2>🎯 Learning Objectives</h2>
+
+<p>
+
+By the end of this lesson, you will be able to:
+
+</p>
+
+<ul>
+
+<li>✅ Understand what a Data Type is.</li>
+
+<li>✅ Differentiate Primitive and Non-Primitive Data Types.</li>
+
+<li>✅ Learn all eight Primitive Data Types.</li>
+
+<li>✅ Select the correct data type for different situations.</li>
+
+<li>✅ Write Java programs using different data types.</li>
+
+<li>✅ Apply Data Types in real-world applications.</li>
+
+</ul>
+
+</section>
+
+<!-- ====================================== -->
+<!-- STORY SECTION -->
+<!-- ====================================== -->
+
+<section class="card">
+
+<h2>📖 Let's Begin with a Story</h2>
+
+<p>
+
+Imagine you're filling out an online college admission form.
+
+</p>
+
+<p>
+
+The form asks you to enter:
+
+</p>
+
+<ul>
+
+<li>👤 Name</li>
+
+<li>🎂 Age</li>
+
+<li>📏 Height</li>
+
+<li>🎓 Grade</li>
+
+<li>🏠 Hostel Student (Yes / No)</li>
+
+</ul>
+
+<p>
+
+Can you enter your age where your name is expected?
+
+</p>
+
+<p>
+
+Can you enter "Twenty" where the form expects only numbers?
+
+</p>
+
+<p>
+
+Can you enter "Excellent" where only True or False is accepted?
+
+</p>
+
+<p>
+
+<strong>No!</strong>
+
+Each field accepts only a particular kind of information.
+
+</p>
+
+<p>
+
+Java follows exactly the same principle.
+
+Before storing a value,
+
+Java needs to know
+
+<b>what type of information</b>
+
+is being stored.
+
+</p>
+
+<div class="definition">
+
+<h3>
+
+What is a Data Type?
+
+</h3>
+
+<p>
+
+A Data Type tells Java what type of value a variable can store.
+
+</p>
+
+</div>
+
+</section>
+
+<!-- ====================================== -->
+<!-- SIMPLE DEFINITION -->
+<!-- ====================================== -->
+
+<section class="card">
+
+<h2>📘 Simple Definition</h2>
+
+<div class="definition">
+
+<p>
+
+A Data Type specifies the type of data that can be stored inside a variable.
+
+</p>
+
+</div>
+
+<p>
+
+It also tells Java:
+
+</p>
+
+<ul>
+
+<li>✔ How much memory to allocate.</li>
+
+<li>✔ What type of values are allowed.</li>
+
+<li>✔ What operations can be performed.</li>
+
+</ul>
+
+</section>
+
+<!-- ====================================== -->
+<!-- REAL-TIME EXAMPLE 1 -->
+<!-- ====================================== -->
+
+<section class="card">
+
+<h2>🎓 Real-Time Example 1 – College Admission System</h2>
+
+<p>
+
+Suppose a college stores student information.
+
+Each field requires a different type of data.
+
+</p>
+
+<table>
+
+<tr>
+
+<th>Field</th>
+
+<th>Stored Value</th>
+
+<th>Data Type</th>
+
+</tr>
+
+<tr>
+
+<td>Student Name</td>
+
+<td>Ananya</td>
+
+<td>String</td>
+
+</tr>
+
+<tr>
+
+<td>Age</td>
+
+<td>21</td>
+
+<td>int</td>
+
+</tr>
+
+<tr>
+
+<td>Height</td>
+
+<td>165.5</td>
+
+<td>double</td>
+
+</tr>
+
+<tr>
+
+<td>Grade</td>
+
+<td>A</td>
+
+<td>char</td>
+
+</tr>
+
+<tr>
+
+<td>Hosteller</td>
+
+<td>true</td>
+
+<td>boolean</td>
+
+</tr>
+
+</table>
+
+<p>
+
+Every piece of information has its own suitable data type.
+
+</p>
+
+</section>
+
+<!-- ====================================== -->
+<!-- REAL-TIME EXAMPLE 2 -->
+<!-- ====================================== -->
+
+<section class="card">
+
+<h2>🏦 Real-Time Example 2 – ATM System</h2>
+
+<p>
+
+Whenever you insert your ATM card,
+
+the ATM stores information like:
+
+</p>
+
+<table>
+
+<tr>
+
+<th>Information</th>
+
+<th>Data Type</th>
+
+</tr>
+
+<tr>
+
+<td>Account Holder Name</td>
+
+<td>String</td>
+
+</tr>
+
+<tr>
+
+<td>PIN</td>
+
+<td>int</td>
+
+</tr>
+
+<tr>
+
+<td>Balance</td>
+
+<td>double</td>
+
+</tr>
+
+<tr>
+
+<td>Card Active</td>
+
+<td>boolean</td>
+
+</tr>
+
+</table>
+
+<p>
+
+Using proper data types ensures secure and accurate transactions.
+
+</p>
+
+</section>
+
+<!-- ====================================== -->
+<!-- REAL-TIME EXAMPLE 3 -->
+<!-- ====================================== -->
+
+<section class="card">
+
+<h2>🛒 Real-Time Example 3 – Online Shopping</h2>
+
+<p>
+
+Whenever you order a product,
+
+the shopping website stores:
+
+</p>
+
+<table>
+
+<tr>
+
+<th>Information</th>
+
+<th>Data Type</th>
+
+</tr>
+
+<tr>
+
+<td>Product Name</td>
+
+<td>String</td>
+
+</tr>
+
+<tr>
+
+<td>Price</td>
+
+<td>double</td>
+
+</tr>
+
+<tr>
+
+<td>Quantity</td>
+
+<td>int</td>
+
+</tr>
+
+<tr>
+
+<td>Available</td>
+
+<td>boolean</td>
+
+</tr>
+
+<tr>
+
+<td>Category Code</td>
+
+<td>char</td>
+
+</tr>
+
+</table>
+
+</section>
+
+<!-- ====================================== -->
+<!-- WHY DATA TYPES -->
+<!-- ====================================== -->
+
+<section class="card">
+
+<h2>💡 Why Do We Need Data Types?</h2>
+
+<p>
+
+Imagine every value is stored as plain text.
+
+</p>
+
+<div class="code-box">
+
+Age = "Twenty"
+
+<br><br>
+
+Price = "Five Hundred"
+
+<br><br>
+
+Marks = "Ninety"
+
+</div>
+
+<p>
+
+Java cannot perform calculations on text values.
+
+</p>
+
+<p>
+
+Now look at the correct way.
+
+</p>
+
+<div class="code-box">
+
+int age = 20;
+
+<br><br>
+
+double price = 500.50;
+
+<br><br>
+
+int marks = 90;
+
+</div>
+
+<p>
+
+Now Java can calculate,
+
+compare,
+
+sort,
+
+and process the data correctly.
+
+</p>
+
+</section>
+
+<!-- ====================================== -->
+<!-- CLASSIFICATION -->
+<!-- ====================================== -->
+
+<section class="card">
+
+<h2>📚 Classification of Data Types</h2>
+
+<p>
+
+Java divides Data Types into two categories.
+
+</p>
+
+<div class="memory">
+
+<div class="box">
+
+<h3>
+
+Primitive Data Types
+
+</h3>
+
+<p>
+
+Stores simple values directly.
+
+</p>
+
+<ul>
+
+<li>byte</li>
+
+<li>short</li>
+
+<li>int</li>
+
+<li>long</li>
+
+<li>float</li>
+
+<li>double</li>
+
+<li>char</li>
+
+<li>boolean</li>
+
+</ul>
+
+</div>
+
+<div class="box">
+
+<h3>
+
+Non-Primitive Data Types
+
+</h3>
+
+<p>
+
+Stores references to objects.
+
+</p>
+
+<ul>
+
+<li>String</li>
+
+<li>Arrays</li>
+
+<li>Classes</li>
+
+<li>Objects</li>
+
+<li>Interfaces</li>
+
+</ul>
+
+</div>
+
+</div>
+
+<p>
+
+💡 In this lesson,
+
+we'll mainly focus on
+
+<b>Primitive Data Types</b>.
+
+You'll learn Non-Primitive Data Types in later modules.
+
+</p>
+
+</section>
+
+<!-- ========= PART 2 STARTS HERE ========= -->
+ <!-- ====================================== -->
+<!-- PRIMITIVE DATA TYPES -->
+<!-- ====================================== -->
+
+<section class="card">
+
+<h2>📊 Java Primitive Data Types</h2>
+
+<p>
+
+Primitive Data Types are the basic building blocks of Java.
+They store simple values directly in memory and are faster than Non-Primitive Data Types.
+
+</p>
+
+<table>
+
+<tr>
+
+<th>Data Type</th>
+<th>Size</th>
+<th>Stores</th>
+<th>Example</th>
+
+</tr>
+
+<tr>
+
+<td>byte</td>
+<td>1 Byte</td>
+<td>Small Integer</td>
+<td>100</td>
+
+</tr>
+
+<tr>
+
+<td>short</td>
+<td>2 Bytes</td>
+<td>Medium Integer</td>
+<td>25000</td>
+
+</tr>
+
+<tr>
+
+<td>int</td>
+<td>4 Bytes</td>
+<td>Whole Numbers</td>
+<td>500</td>
+
+</tr>
+
+<tr>
+
+<td>long</td>
+<td>8 Bytes</td>
+<td>Large Integer</td>
+<td>1234567890L</td>
+
+</tr>
+
+<tr>
+
+<td>float</td>
+<td>4 Bytes</td>
+<td>Decimal Number</td>
+<td>98.5f</td>
+
+</tr>
+
+<tr>
+
+<td>double</td>
+<td>8 Bytes</td>
+<td>Precise Decimal Number</td>
+<td>98.5678</td>
+
+</tr>
+
+<tr>
+
+<td>char</td>
+<td>2 Bytes</td>
+<td>Single Character</td>
+<td>'A'</td>
+
+</tr>
+
+<tr>
+
+<td>boolean</td>
+<td>1 Bit (Logical)</td>
+<td>true / false</td>
+<td>true</td>
+
+</tr>
+
+</table>
+
+</section>
+
+<!-- ====================================== -->
+<!-- MEMORY REPRESENTATION -->
+<!-- ====================================== -->
+
+<section class="card">
+
+<h2>🧠 How Java Stores Data in Memory</h2>
+
+<p>
+
+Every variable occupies memory according to its data type.
+
+</p>
+
+<div class="memory">
+
+<div class="box">
+
+<h3>name</h3>
+
+<p>Rahul</p>
+
+<small>String</small>
+
+</div>
+
+<div class="box">
+
+<h3>age</h3>
+
+<p>20</p>
+
+<small>int</small>
+
+</div>
+
+<div class="box">
+
+<h3>salary</h3>
+
+<p>35000.50</p>
+
+<small>double</small>
+
+</div>
+
+<div class="box">
+
+<h3>grade</h3>
+
+<p>A</p>
+
+<small>char</small>
+
+</div>
+
+<div class="box">
+
+<h3>passed</h3>
+
+<p>true</p>
+
+<small>boolean</small>
+
+</div>
+
+</div>
+
+<p>
+
+Think of each variable as a separate labeled storage box in your computer's memory.
+
+</p>
+
+</section>
+
+<!-- ====================================== -->
+<!-- PROGRAM -->
+<!-- ====================================== -->
+
+<section class="card">
+
+<h2>💻 Java Program Using Different Data Types</h2>
+
+<div class="code-box">
+
+<pre>
+
+public class DataTypes{
+
+public static void main(String args[]){
+
+String name="Rahul";
+
+int age=20;
+
+double salary=35000.50;
+
+char grade='A';
+
+boolean passed=true;
+
+System.out.println("Name : "+name);
+
+System.out.println("Age : "+age);
+
+System.out.println("Salary : "+salary);
+
+System.out.println("Grade : "+grade);
+
+System.out.println("Passed : "+passed);
+
+}
+
+}
+
+</pre>
+
+</div>
+
+</section>
+
+<!-- ====================================== -->
+<!-- OUTPUT -->
+<!-- ====================================== -->
+
+<section class="card">
+
+<h2>🖥 Output</h2>
+
+<div class="output-box">
+
+Name : Rahul
+
+<br><br>
+
+Age : 20
+
+<br><br>
+
+Salary : 35000.5
+
+<br><br>
+
+Grade : A
+
+<br><br>
+
+Passed : true
+
+</div>
+
+</section>
+
+<!-- ====================================== -->
+<!-- LINE BY LINE -->
+<!-- ====================================== -->
+
+<section class="card">
+
+<h2>🔍 Line-by-Line Explanation</h2>
+
+<div class="explanation">
+
+<h3>String name = "Rahul";</h3>
+
+<p>
+
+Stores the student's name as text.
+
+</p>
+
+</div>
+
+<div class="explanation">
+
+<h3>int age = 20;</h3>
+
+<p>
+
+Stores age as a whole number.
+
+</p>
+
+</div>
+
+<div class="explanation">
+
+<h3>double salary = 35000.50;</h3>
+
+<p>
+
+Stores salary with decimal precision.
+
+</p>
+
+</div>
+
+<div class="explanation">
+
+<h3>char grade = 'A';</h3>
+
+<p>
+
+Stores one single character.
+
+</p>
+
+</div>
+
+<div class="explanation">
+
+<h3>boolean passed = true;</h3>
+
+<p>
+
+Stores only true or false.
+
+</p>
+
+</div>
+
+<div class="explanation">
+
+<h3>System.out.println()</h3>
+
+<p>
+
+Displays the stored values on the screen.
+
+</p>
+
+</div>
+
+</section>
+
+<!-- ====================================== -->
+<!-- REAL TIME EXAMPLE -->
+<!-- ====================================== -->
+
+<section class="card">
+
+<h2>🌍 Real-Time Example – Student Management System</h2>
+
+<p>
+
+Suppose your college develops software to maintain student records.
+
+Each piece of information requires a different data type.
+
+</p>
+
+<table>
+
+<tr>
+
+<th>Student Information</th>
+
+<th>Data Type</th>
+
+</tr>
+
+<tr>
+
+<td>Student Name</td>
+
+<td>String</td>
+
+</tr>
+
+<tr>
+
+<td>Roll Number</td>
+
+<td>int</td>
+
+</tr>
+
+<tr>
+
+<td>CGPA</td>
+
+<td>double</td>
+
+</tr>
+
+<tr>
+
+<td>Section</td>
+
+<td>char</td>
+
+</tr>
+
+<tr>
+
+<td>Fee Paid</td>
+
+<td>boolean</td>
+
+</tr>
+
+</table>
+
+<p>
+
+Choosing the correct data type makes the software efficient and reliable.
+
+</p>
+
+</section>
+
+<!-- ====================================== -->
+<!-- INDUSTRY USE CASES -->
+<!-- ====================================== -->
+
+<section class="card">
+
+<h2>🏢 Industry Use Cases</h2>
+
+<div class="memory">
+
+<div class="box">
+
+<h3>🏦 Banking</h3>
+
+<ul>
+
+<li>Balance → double</li>
+
+<li>PIN → int</li>
+
+<li>Name → String</li>
+
+<li>Account Active → boolean</li>
+
+</ul>
+
+</div>
+
+<div class="box">
+
+<h3>🏥 Hospital</h3>
+
+<ul>
+
+<li>Patient Name → String</li>
+
+<li>Age → int</li>
+
+<li>Temperature → float</li>
+
+<li>Blood Group → String</li>
+
+</ul>
+
+</div>
+
+<div class="box">
+
+<h3>🛒 Shopping</h3>
+
+<ul>
+
+<li>Product → String</li>
+
+<li>Price → double</li>
+
+<li>Quantity → int</li>
+
+<li>Available → boolean</li>
+
+</ul>
+
+</div>
+
+</div>
+
+</section>
+
+<!-- ====================================== -->
+<!-- INTERACTIVE ACTIVITY -->
+<!-- ====================================== -->
+
+<section class="card">
+
+<h2>🎮 Activity - Choose the Correct Data Type</h2>
+
+<p>
+
+Which data type is suitable for storing the following values?
+
+</p>
+
+<table>
+
+<tr>
+
+<th>Value</th>
+
+<th>Your Answer</th>
+
+</tr>
+
+<tr>
+
+<td>25</td>
+
+<td>__________</td>
+
+</tr>
+
+<tr>
+
+<td>98.6</td>
+
+<td>__________</td>
+
+</tr>
+
+<tr>
+
+<td>'M'</td>
+
+<td>__________</td>
+
+</tr>
+
+<tr>
+
+<td>true</td>
+
+<td>__________</td>
+
+</tr>
+
+<tr>
+
+<td>"Java"</td>
+
+<td>__________</td>
+
+</tr>
+
+</table>
+
+<button onclick="showDatatypeAnswers()">
+
+Show Answers
+
+</button>
+
+<div id="datatypeAnswer"></div>
+
+</section>
+
+<!-- ========= PART 3 STARTS HERE ========= -->
+ <!-- ====================================== -->
+<!-- VARIABLE NAMING RULES -->
+<!-- ====================================== -->
+
+<section class="card">
+
+<h2>📜 Rules for Using Data Types</h2>
+
+<ul>
+
+<li>✔ Choose the appropriate data type based on the value.</li>
+
+<li>✔ Store whole numbers using <b>int</b> whenever possible.</li>
+
+<li>✔ Store decimal values using <b>double</b>.</li>
+
+<li>✔ Store only one character using <b>char</b>.</li>
+
+<li>✔ Store only true or false using <b>boolean</b>.</li>
+
+<li>✔ Store text using <b>String</b>.</li>
+
+</ul>
+
+</section>
+
+<!-- ====================================== -->
+<!-- COMMON MISTAKES -->
+<!-- ====================================== -->
+
+<section class="card">
+
+<h2>❌ Common Mistakes</h2>
+
+<div class="code-box">
+
+<pre>
+
+int age = "20";
+
+</pre>
+
+</div>
+
+<p>❌ Wrong because numbers should not be inside double quotes.</p>
+
+<hr>
+
+<div class="code-box">
+
+<pre>
+
+char grade = "A";
+
+</pre>
+
+</div>
+
+<p>❌ Wrong because char stores only one character using single quotes.</p>
+
+<hr>
+
+<div class="code-box">
+
+<pre>
+
+char grade = 'A';
+
+</pre>
+
+</div>
+
+<p>✔ Correct</p>
+
+<hr>
+
+<div class="code-box">
+
+<pre>
+
+boolean pass = Yes;
+
+</pre>
+
+</div>
+
+<p>❌ Java accepts only <b>true</b> or <b>false</b>.</p>
+
+<hr>
+
+<div class="code-box">
+
+<pre>
+
+float price = 25.5;
+
+</pre>
+
+</div>
+
+<p>❌ Missing <b>f</b>.</p>
+
+<div class="code-box">
+
+<pre>
+
+float price = 25.5f;
+
+</pre>
+
+</div>
+
+<p>✔ Correct</p>
+
+</section>
+
+<!-- ====================================== -->
+<!-- BEST PRACTICES -->
+<!-- ====================================== -->
+
+<section class="card">
+
+<h2>💡 Best Practices</h2>
+
+<ul>
+
+<li>✔ Use meaningful variable names.</li>
+
+<li>✔ Choose the smallest suitable data type whenever possible.</li>
+
+<li>✔ Use <b>double</b> for decimal values.</li>
+
+<li>✔ Use <b>boolean</b> for Yes/No conditions.</li>
+
+<li>✔ Use <b>char</b> only for one character.</li>
+
+<li>✔ Use <b>String</b> for text.</li>
+
+</ul>
+
+</section>
+
+<!--====================================== -->
+<! -- THINK LIKE A PROGRAMMER -->
+<!-- ====================================== -->
+
+<section class="card">
+
+<h2>🧠 Think Like a Programmer</h2>
+
+<p>
+
+Suppose you are creating a Movie Ticket Booking System.
+
+Choose the correct data type for:
+
+</p>
+
+<table>
+
+<tr>
+
+<th>Information</th>
+
+<th>Data Type</th>
+
+</tr>
+
+<tr>
+
+<td>Customer Name</td>
+
+<td>________</td>
+
+</tr>
+
+<tr>
+
+<td>Ticket Price</td>
+
+<td>________</td>
+
+</tr>
+
+<tr>
+
+<td>Number of Tickets</td>
+
+<td>________</td>
+
+</tr>
+
+<tr>
+
+<td>Booking Confirmed</td>
+
+<td>________</td>
+
+</tr>
+
+</table>
+
+<button onclick="showAnswer()">
+
+Show Answer
+
+</button>
+
+<div id="answer"></div>
+
+</section>
+
+<!-- ====================================== -->
+<!-- PRACTICE -->
+<!-- ====================================== -->
+
+<section class="card">
+
+<h2>🎯 Practice Exercise</h2>
+
+<p>
+
+Declare variables for the following:
+
+</p>
+
+<ul>
+
+<li>Your Name</li>
+
+<li>Your Age</li>
+
+<li>Your College CGPA</li>
+
+<li>Your Grade</li>
+
+<li>Have you completed today's lesson?</li>
+
+</ul>
+
+<p>
+
+Print all the values using <b>System.out.println()</b>.
+
+</p>
+
+</section>
+
+<!-- ====================================== -->
+<!-- QUIZ -->
+<!-- ====================================== -->
+
+<section class="card">
+
+<h2>❓ Quick Quiz</h2>
+
+<div class="quiz">
+
+<p><b>1. Which data type stores decimal numbers?</b></p>
+
+<button onclick="quiz('q1',false)">int</button>
+
+<button onclick="quiz('q1',true)">double</button>
+
+<button onclick="quiz('q1',false)">boolean</button>
+
+<button onclick="quiz('q1',false)">char</button>
+
+<p id="q1"></p>
+
+<hr>
+
+<p><b>2. Which data type stores a single character?</b></p>
+
+<button onclick="quiz('q2',false)">String</button>
+
+<button onclick="quiz('q2',true)">char</button>
+
+<button onclick="quiz('q2',false)">int</button>
+
+<button onclick="quiz('q2',false)">float</button>
+
+<p id="q2"></p>
+
+<hr>
+
+<p><b>3. Which data type stores True or False?</b></p>
+
+<button onclick="quiz('q3',true)">boolean</button>
+
+<button onclick="quiz('q3',false)">double</button>
+
+<button onclick="quiz('q3',false)">long</button>
+
+<button onclick="quiz('q3',false)">byte</button>
+
+<p id="q3"></p>
+
+<hr>
+
+<p><b>4. How many primitive data types are there?</b></p>
+
+<button onclick="quiz('q4',false)">6</button>
+
+<button onclick="quiz('q4',false)">7</button>
+
+<button onclick="quiz('q4',true)">8</button>
+
+<button onclick="quiz('q4',false)">10</button>
+
+<p id="q4"></p>
+
+<hr>
+
+<p><b>5. Which data type stores text?</b></p>
+
+<button onclick="quiz('q5',false)">char</button>
+
+<button onclick="quiz('q5',true)">String</button>
+
+<button onclick="quiz('q5',false)">boolean</button>
+
+<button onclick="quiz('q5',false)">byte</button>
+
+<p id="q5"></p>
+
+</div>
+
+</section>
+
+<!-- ====================================== -->
+<!-- KEY TAKEAWAYS -->
+<!-- ====================================== -->
+
+<section class="card">
+
+<h2>📌 Key Takeaways</h2>
+
+<ul>
+
+<li>✅ Data Types tell Java what type of value can be stored.</li>
+
+<li>✅ Java has Primitive and Non-Primitive Data Types.</li>
+
+<li>✅ Primitive Data Types store values directly.</li>
+
+<li>✅ Every variable must have a suitable data type.</li>
+
+<li>✅ Choosing the correct data type improves efficiency.</li>
+
+<li>✅ Data Types are used in every Java application.</li>
+
+</ul>
+
+</section>
+
+<!-- ====================================== -->
+<!-- LESSON COMPLETE -->
+<!-- ====================================== -->
+
+<section class="card">
+
+<h2>🏆 Lesson Completed</h2>
+
+<p>
+
+Excellent! You have successfully completed the <b>Data Types</b> lesson.
+
+</p>
+
+<button onclick="completeLesson()">
+
+Mark Lesson Complete
+
+</button>
+
+<div id="badge"></div>
+
+</section>
+
+<!-- ====================================== -->
+<!-- STAR RATING -->
+<!-- ====================================== -->
+
+<section class="card">
+
+<h2>⭐ Rate this Lesson</h2>
+
+<span onclick="rate(1)">⭐</span>
+<span onclick="rate(2)">⭐</span>
+<span onclick="rate(3)">⭐</span>
+<span onclick="rate(4)">⭐</span>
+<span onclick="rate(5)">⭐</span>
+
+<p id="rating"></p>
+
+</section>
+
+<!-- ====================================== -->
+<!-- NOTES -->
+<!-- ====================================== -->
+
+<section class="card">
+
+<h2>📝 My Notes</h2>
+
+<textarea id="notes" rows="8" cols="80"
+placeholder="Write your notes here..."></textarea>
+
+<br><br>
+
+<button onclick="saveNotes()">
+
+Save Notes
+
+</button>
+
+</section>
+
+<!-- ====================================== -->
+<!-- NAVIGATION -->
+<!-- ====================================== -->
+
+<section class="navigation">
+
+<a href="variables.html">
+
+⬅ Previous Topic
+
+</a>
+
+<a href="operators.html">
+
+Next Topic ➜
+
+</a>
+
+</section>
+
+<!-- ====================================== -->
+<!-- FOOTER -->
+<!-- ====================================== -->
+
+<footer>
+
+<p>
+
+© 2026 Java Techkie Platform
+
+</p>
+
+<p>
+
+Step to Code... Step to Achieve.
+
+</p>
+
+</footer>
+
+<script src="/javascript/javafundamentals.js"></script>
+
+</body>
+</html>
